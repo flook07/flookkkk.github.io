@@ -1,0 +1,93 @@
+body{
+    background-color:#faff;
+}
+.bigphotoalbum{
+    display: flex;justify-content: center;text-align: center;
+}
+.photoalbum  {
+      opacity: 0; transform: translateX(-100vw); animation: slidein 3s forwards ; }
+
+.messege{
+    padding-top: 20px; text-align: center;color: white;font-weight: bolder;
+}
+
+h1{
+    font-family: sans-serif; font-size: 40px;
+    opacity: 0;margin-top: 10px;  transform:translateY(100px);
+    animation: slidup 4s  infinite ;animation-delay: 0.5;
+}  
+p{
+    font-family: sans-serif;font-weight: lighter;font-size: 20px;opacity: 0;animation-delay: 1.5; animation: fadein 4s infinite  ease-out;color:black;
+}
+.bigpu{
+    display: flex; justify-content:center ; gap: 90px;
+}
+.pu{
+    width: 10px;height: 10px;border-radius: 4px;background-color:blue;margin-top: 30px;
+    opacity: 0; transform: translateY(-100vh) ;animation: pu 1.5s infinite ;
+}
+.pu1{
+    width: 10px;height: 10px;border-radius: 4px;background-color:yellow;margin-top: 30px;
+    opacity: 0; transform: translateY(-100vh) ;animation: pu 1.5s infinite ;
+}
+.pu2{
+    width: 10px;height: 10px;border-radius: 4px;background-color:white;margin-top: 30px;
+    opacity: 0; transform: translateY(-100vh) ;animation: pu 1.5s infinite ;
+}
+.pu3{
+    width: 10px;height: 10px;border-radius: 4px;background-color:red;margin-top: 30px;
+    opacity: 0; transform: translateY(-100vh) ;animation: pu 1.5s infinite ;
+}
+.pu4{
+    width: 10px;height: 10px;border-radius: 4px;background-color:green;margin-top: 30px; 
+    opacity: 0; transform: translateY(-100vh) ;animation: pu 1.5s infinite ;
+}
+button{
+    width: 100px;height: 100px;border-radius: 30px;background-color: pink;font-size: 15px; font-weight: bolder;font-family: sans-serif; animation: box 2s infinite; 
+}
+#wish{
+     width: 1000px; height: 200px; border-radius: 20px; background-color: #faff;
+     margin-left: 15px; font-size: 20px; font-weight: bolder; font-family: sans-serif; padding-left: 15px; margin-top: 20px; animation: wish 1.5s forwards ease-out;color:black;
+}
+.boxyour{
+    width: 100px; height: 100px; border-radius: 30px; background-color: pink; font-size: 15px; font-weight: bolder; font-family: sans-serif; color:black; animation: your 1.5s infinite;
+}
+.galary{
+    display: flex;  justify-content: space-between; margin-top: 20px; margin-left: 20px; margin-right: 20px;
+}
+.button0{
+    width: 100px;height: 100px;border-radius: 30px;background-color: pink;font-size: 30px; font-weight: bolder;font-family: sans-serif; animation: box 2s forwards; 
+}
+h3{font-size: 20px; font-weight: bolder; font-family: sans-serif;}
+.pictures {display: flex; justify-content:center; }
+#album1 {margin-top: 80px; margin-left: 50px;text-align: center; position: absolute;}
+#album2 {margin-top: 80px; margin-left: 50px;text-align: center;  position: absolute;}
+#album3 {margin-top: 80px; margin-left: 50px;text-align: center;position: absolute; }
+#album4 {margin-top: 80px; margin-left: 50px;text-align: center; position: absolute;}
+#album5 {margin-top: 80px; margin-left: 50px;text-align: center; position: absolute;}
+#album6 {margin-top: 80px; margin-left: 50px;text-align: center; position: absolute;}
+#album7 {margin-top: 80px; margin-left: 50px;text-align: center; position: absolute;}
+#album8 {margin-top: 80px; margin-left: 50px;text-align: center; position: absolute;}
+#album9 {margin-top: 80px; margin-left: 50px;text-align: center; position: absolute;}
+#album10 {margin-top: 80px; margin-left: 50px;text-align: center; position: absolute;}
+
+#album1 img {width :100%;height: auto;display: block;border-radius: 30px; border: 7px solid white; animation: rup 2s forwards; }
+#album2 img {width: 100%;height: auto;display: block;border-radius: 30px; border: 7px solid white;animation: rup 2s forwards; }
+#album3 img {width: 100%;height: auto;display: block;border-radius: 30px; border: 7px solid white;animation: rup 2s forwards;}
+#album4 img {width: 100%;height: auto;display: block;border-radius: 30px; border: 7px solid white;animation: rup 2s forwards;}
+#album5 img {width: 100%;height: auto;display: block;border-radius: 30px; border: 7px solid white;animation: rup 2s forwards;}
+#album6 img {width: 100%;height: auto;display: block;border-radius: 30px; border: 7px solid white;animation: rup 2s forwards;}
+#album7 img {width: 100%;height: auto;display: block;border-radius: 30px; border: 7px solid white;animation: rup 2s forwards;}
+#album8 img {width: 100%;height: auto;display: block;border-radius: 30px; border: 7px solid white;animation: rup 2s forwards;}
+#album9 img {width: 100%;height: auto;display: block;border-radius: 30px; border: 7px solid white;animation: rup 2s forwards;}
+#album10 img {width: 100%;height: auto;display: block;border-radius: 30px; border: 7px solid white;animation: rup 2s forwards;}
+@keyframes slidup{from{opacity: 0; transform: translateY(100px);}to{opacity: 1;transform: translate(0);}}
+@keyframes fadein{ from{opacity: 0; } to{ opacity: 1;} }
+@keyframes slidein{  to{opacity: 1; transform: translateX(0);} }
+@keyframes pu{to{opacity: 1; transform: translateY(0);}}
+@keyframes box{from{opacity: 0; transform: translateZ(30);} to{opacity: 1; transform: translateZ(0);} }
+@keyframes wish{from{opacity: 0; transform: translateY(-100vh);} to{opacity: 1; transform: translateY(0);}}
+@keyframes your{from{opacity: 0; transform: translateZ(100vw);} to{opacity: 1; transform: translateZ(0);}}
+@keyframes rup{from{opacity: 0;transform: translateY(-40);} to{opacity: 1; transform: translateY(0);}}
+ 
+                     
